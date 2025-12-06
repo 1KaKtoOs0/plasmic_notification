@@ -98,29 +98,29 @@ export type PlasmicHomepage__OverridesType = {
   button?: Flex__<typeof Button>;
   دکمهرزروسایت?: Flex__<"div">;
   top?: Flex__<"div">;
-  left?: Flex__<"div">;
-  دکمهیرزروسایت?: Flex__<typeof Switch>;
   right?: Flex__<"div">;
   title?: Flex__<"div">;
+  left?: Flex__<"div">;
+  دکمهیرزروسایت?: Flex__<typeof Switch>;
   details?: Flex__<"div">;
   تسویه?: Flex__<"div">;
   تسویه2?: Flex__<"div">;
   تسویه4?: Flex__<"div">;
   دکمهرزرودستی?: Flex__<"div">;
   top2?: Flex__<"div">;
-  left2?: Flex__<"div">;
-  دکمهیرزروسایت2?: Flex__<typeof Switch>;
   right2?: Flex__<"div">;
   title2?: Flex__<"div">;
+  left2?: Flex__<"div">;
+  دکمهیرزروسایت2?: Flex__<typeof Switch>;
   details2?: Flex__<"div">;
   رزروجدید2?: Flex__<"div">;
   رزروجدید4?: Flex__<"div">;
   دکمهروزورودمهمان?: Flex__<"div">;
   top3?: Flex__<"div">;
-  left3?: Flex__<"div">;
-  دکمهیرزروسایت3?: Flex__<typeof Switch>;
   right3?: Flex__<"div">;
   title3?: Flex__<"div">;
+  left3?: Flex__<"div">;
+  دکمهیرزروسایت3?: Flex__<typeof Switch>;
   details3?: Flex__<"div">;
   رزروجدید3?: Flex__<"div">;
   رزروجدید5?: Flex__<"div">;
@@ -630,6 +630,25 @@ function PlasmicHomepage__RenderFunc(props: {
                         className={classNames(projectcss.all, sty.top)}
                       >
                         <div
+                          data-plasmic-name={"right"}
+                          data-plasmic-override={overrides.right}
+                          className={classNames(projectcss.all, sty.right)}
+                        >
+                          <div
+                            data-plasmic-name={"title"}
+                            data-plasmic-override={overrides.title}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.title
+                            )}
+                          >
+                            {
+                              "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u0633\u0627\u06cc\u062a"
+                            }
+                          </div>
+                        </div>
+                        <div
                           data-plasmic-name={"left"}
                           data-plasmic-override={overrides.left}
                           className={classNames(projectcss.all, sty.left)}
@@ -842,25 +861,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             );
                           })()}
                         </div>
-                        <div
-                          data-plasmic-name={"right"}
-                          data-plasmic-override={overrides.right}
-                          className={classNames(projectcss.all, sty.right)}
-                        >
-                          <div
-                            data-plasmic-name={"title"}
-                            data-plasmic-override={overrides.title}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.title
-                            )}
-                          >
-                            {
-                              "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u0633\u0627\u06cc\u062a"
-                            }
-                          </div>
-                        </div>
                       </div>
                       <div
                         data-plasmic-name={"details"}
@@ -923,6 +923,53 @@ function PlasmicHomepage__RenderFunc(props: {
                         data-plasmic-override={overrides.top2}
                         className={classNames(projectcss.all, sty.top2)}
                       >
+                        <div
+                          data-plasmic-name={"right2"}
+                          data-plasmic-override={overrides.right2}
+                          className={classNames(projectcss.all, sty.right2)}
+                        >
+                          <div
+                            data-plasmic-name={"title2"}
+                            data-plasmic-override={overrides.title2}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.title2
+                            )}
+                          >
+                            {hasVariant(
+                              globalVariants,
+                              "screen",
+                              "mobileOnly"
+                            ) ? (
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontWeight: 700 }}
+                                >
+                                  {
+                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u062f\u0633\u062a\u06cc"
+                                  }
+                                </span>
+                              </React.Fragment>
+                            ) : (
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontWeight: 700 }}
+                                >
+                                  {
+                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u062f\u0633\u062a\u06cc"
+                                  }
+                                </span>
+                              </React.Fragment>
+                            )}
+                          </div>
+                        </div>
                         <div
                           data-plasmic-name={"left2"}
                           data-plasmic-override={overrides.left2}
@@ -1136,53 +1183,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             );
                           })()}
                         </div>
-                        <div
-                          data-plasmic-name={"right2"}
-                          data-plasmic-override={overrides.right2}
-                          className={classNames(projectcss.all, sty.right2)}
-                        >
-                          <div
-                            data-plasmic-name={"title2"}
-                            data-plasmic-override={overrides.title2}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.title2
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ fontWeight: 700 }}
-                                >
-                                  {
-                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u062f\u0633\u062a\u06cc"
-                                  }
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ fontWeight: 700 }}
-                                >
-                                  {
-                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0632\u0631\u0648 \u062f\u0633\u062a\u06cc"
-                                  }
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </div>
-                        </div>
                       </div>
                       <div
                         data-plasmic-name={"details2"}
@@ -1238,6 +1238,53 @@ function PlasmicHomepage__RenderFunc(props: {
                         data-plasmic-override={overrides.top3}
                         className={classNames(projectcss.all, sty.top3)}
                       >
+                        <div
+                          data-plasmic-name={"right3"}
+                          data-plasmic-override={overrides.right3}
+                          className={classNames(projectcss.all, sty.right3)}
+                        >
+                          <div
+                            data-plasmic-name={"title3"}
+                            data-plasmic-override={overrides.title3}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.title3
+                            )}
+                          >
+                            {hasVariant(
+                              globalVariants,
+                              "screen",
+                              "mobileOnly"
+                            ) ? (
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontWeight: 700 }}
+                                >
+                                  {
+                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646"
+                                  }
+                                </span>
+                              </React.Fragment>
+                            ) : (
+                              <React.Fragment>
+                                <span
+                                  className={
+                                    "plasmic_default__all plasmic_default__span"
+                                  }
+                                  style={{ fontWeight: 700 }}
+                                >
+                                  {
+                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646"
+                                  }
+                                </span>
+                              </React.Fragment>
+                            )}
+                          </div>
+                        </div>
                         <div
                           data-plasmic-name={"left3"}
                           data-plasmic-override={overrides.left3}
@@ -1451,53 +1498,6 @@ function PlasmicHomepage__RenderFunc(props: {
                             );
                           })()}
                         </div>
-                        <div
-                          data-plasmic-name={"right3"}
-                          data-plasmic-override={overrides.right3}
-                          className={classNames(projectcss.all, sty.right3)}
-                        >
-                          <div
-                            data-plasmic-name={"title3"}
-                            data-plasmic-override={overrides.title3}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.title3
-                            )}
-                          >
-                            {hasVariant(
-                              globalVariants,
-                              "screen",
-                              "mobileOnly"
-                            ) ? (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ fontWeight: 700 }}
-                                >
-                                  {
-                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646"
-                                  }
-                                </span>
-                              </React.Fragment>
-                            ) : (
-                              <React.Fragment>
-                                <span
-                                  className={
-                                    "plasmic_default__all plasmic_default__span"
-                                  }
-                                  style={{ fontWeight: 700 }}
-                                >
-                                  {
-                                    "\u0627\u0639\u0644\u0627\u0646\u0627\u062a \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646"
-                                  }
-                                </span>
-                              </React.Fragment>
-                            )}
-                          </div>
-                        </div>
                       </div>
                       <div
                         data-plasmic-name={"details3"}
@@ -1562,29 +1562,29 @@ const PlasmicDescendants = {
     "button",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "top",
-    "left",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "right",
     "title",
+    "left",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "details",
     "\u062a\u0633\u0648\u06cc\u0647",
     "\u062a\u0633\u0648\u06cc\u06472",
     "\u062a\u0633\u0648\u06cc\u06474",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u062f\u0633\u062a\u06cc",
     "top2",
-    "left2",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "right2",
     "title2",
+    "left2",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "details2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f4",
     "\u062f\u06a9\u0645\u0647\u0631\u0648\u0632\u0648\u0631\u0648\u062f\u0645\u0647\u0645\u0627\u0646",
     "top3",
-    "left3",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "right3",
     "title3",
+    "left3",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "details3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
@@ -1600,29 +1600,29 @@ const PlasmicDescendants = {
     "button",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "top",
-    "left",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "right",
     "title",
+    "left",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "details",
     "\u062a\u0633\u0648\u06cc\u0647",
     "\u062a\u0633\u0648\u06cc\u06472",
     "\u062a\u0633\u0648\u06cc\u06474",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u062f\u0633\u062a\u06cc",
     "top2",
-    "left2",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "right2",
     "title2",
+    "left2",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "details2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f4",
     "\u062f\u06a9\u0645\u0647\u0631\u0648\u0632\u0648\u0631\u0648\u062f\u0645\u0647\u0645\u0627\u0646",
     "top3",
-    "left3",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "right3",
     "title3",
+    "left3",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "details3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
@@ -1645,10 +1645,10 @@ const PlasmicDescendants = {
   دکمهرزروسایت: [
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "top",
-    "left",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "right",
     "title",
+    "left",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "details",
     "\u062a\u0633\u0648\u06cc\u0647",
     "\u062a\u0633\u0648\u06cc\u06472",
@@ -1656,11 +1656,13 @@ const PlasmicDescendants = {
   ],
   top: [
     "top",
-    "left",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "right",
-    "title"
+    "title",
+    "left",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
   ],
+  right: ["right", "title"],
+  title: ["title"],
   left: [
     "left",
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
@@ -1668,8 +1670,6 @@ const PlasmicDescendants = {
   دکمهیرزروسایت: [
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
   ],
-  right: ["right", "title"],
-  title: ["title"],
   details: [
     "details",
     "\u062a\u0633\u0648\u06cc\u0647",
@@ -1682,21 +1682,23 @@ const PlasmicDescendants = {
   دکمهرزرودستی: [
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u062f\u0633\u062a\u06cc",
     "top2",
-    "left2",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "right2",
     "title2",
+    "left2",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "details2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f4"
   ],
   top2: [
     "top2",
-    "left2",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2",
     "right2",
-    "title2"
+    "title2",
+    "left2",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2"
   ],
+  right2: ["right2", "title2"],
+  title2: ["title2"],
   left2: [
     "left2",
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2"
@@ -1704,8 +1706,6 @@ const PlasmicDescendants = {
   دکمهیرزروسایت2: [
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2"
   ],
-  right2: ["right2", "title2"],
-  title2: ["title2"],
   details2: [
     "details2",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f2",
@@ -1716,21 +1716,23 @@ const PlasmicDescendants = {
   دکمهروزورودمهمان: [
     "\u062f\u06a9\u0645\u0647\u0631\u0648\u0632\u0648\u0631\u0648\u062f\u0645\u0647\u0645\u0627\u0646",
     "top3",
-    "left3",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "right3",
     "title3",
+    "left3",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "details3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
   ],
   top3: [
     "top3",
-    "left3",
-    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "right3",
-    "title3"
+    "title3",
+    "left3",
+    "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3"
   ],
+  right3: ["right3", "title3"],
+  title3: ["title3"],
   left3: [
     "left3",
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3"
@@ -1738,8 +1740,6 @@ const PlasmicDescendants = {
   دکمهیرزروسایت3: [
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3"
   ],
-  right3: ["right3", "title3"],
-  title3: ["title3"],
   details3: [
     "details3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3",
@@ -1763,29 +1763,29 @@ type NodeDefaultElementType = {
   button: typeof Button;
   دکمهرزروسایت: "div";
   top: "div";
-  left: "div";
-  دکمهیرزروسایت: typeof Switch;
   right: "div";
   title: "div";
+  left: "div";
+  دکمهیرزروسایت: typeof Switch;
   details: "div";
   تسویه: "div";
   تسویه2: "div";
   تسویه4: "div";
   دکمهرزرودستی: "div";
   top2: "div";
-  left2: "div";
-  دکمهیرزروسایت2: typeof Switch;
   right2: "div";
   title2: "div";
+  left2: "div";
+  دکمهیرزروسایت2: typeof Switch;
   details2: "div";
   رزروجدید2: "div";
   رزروجدید4: "div";
   دکمهروزورودمهمان: "div";
   top3: "div";
-  left3: "div";
-  دکمهیرزروسایت3: typeof Switch;
   right3: "div";
   title3: "div";
+  left3: "div";
+  دکمهیرزروسایت3: typeof Switch;
   details3: "div";
   رزروجدید3: "div";
   رزروجدید5: "div";
@@ -1865,12 +1865,12 @@ export const PlasmicHomepage = Object.assign(
       "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
     ),
     top: makeNodeComponent("top"),
+    right: makeNodeComponent("right"),
+    title: makeNodeComponent("title"),
     left: makeNodeComponent("left"),
     دکمهیرزروسایت: makeNodeComponent(
       "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
     ),
-    right: makeNodeComponent("right"),
-    title: makeNodeComponent("title"),
     details: makeNodeComponent("details"),
     تسویه: makeNodeComponent("\u062a\u0633\u0648\u06cc\u0647"),
     تسویه2: makeNodeComponent("\u062a\u0633\u0648\u06cc\u06472"),
@@ -1879,12 +1879,12 @@ export const PlasmicHomepage = Object.assign(
       "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u062f\u0633\u062a\u06cc"
     ),
     top2: makeNodeComponent("top2"),
+    right2: makeNodeComponent("right2"),
+    title2: makeNodeComponent("title2"),
     left2: makeNodeComponent("left2"),
     دکمهیرزروسایت2: makeNodeComponent(
       "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a2"
     ),
-    right2: makeNodeComponent("right2"),
-    title2: makeNodeComponent("title2"),
     details2: makeNodeComponent("details2"),
     رزروجدید2: makeNodeComponent(
       "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f2"
@@ -1896,12 +1896,12 @@ export const PlasmicHomepage = Object.assign(
       "\u062f\u06a9\u0645\u0647\u0631\u0648\u0632\u0648\u0631\u0648\u062f\u0645\u0647\u0645\u0627\u0646"
     ),
     top3: makeNodeComponent("top3"),
+    right3: makeNodeComponent("right3"),
+    title3: makeNodeComponent("title3"),
     left3: makeNodeComponent("left3"),
     دکمهیرزروسایت3: makeNodeComponent(
       "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3"
     ),
-    right3: makeNodeComponent("right3"),
-    title3: makeNodeComponent("title3"),
     details3: makeNodeComponent("details3"),
     رزروجدید3: makeNodeComponent(
       "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3"
