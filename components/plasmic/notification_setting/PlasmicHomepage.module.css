@@ -157,7 +157,113 @@
   font-weight: 500;
   min-width: 0;
 }
-.freeBox__jVv3S {
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.up {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.right4 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.bale2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 63px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-z0lbVLzGgPDA);
+  box-shadow: 0px 0px 16px 0px #00000047;
+  flex-shrink: 0;
+  border-radius: 100px;
+  padding: 8px;
+}
+.text__lRipp {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 9px;
+  padding-bottom: 18px;
+  font-family: "Estedad";
+  font-weight: 600;
+  font-size: 22px;
+  min-width: 0;
+}
+.left4 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.bale {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 200px;
+  height: 63px;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-z0lbVLzGgPDA);
+  box-shadow: 0px 0px 16px 0px #00000047;
+  flex-shrink: 0;
+  border-radius: 100px;
+  padding: 8px;
+}
+.text__nGqMz {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 9px;
+  padding-bottom: 18px;
+  font-family: "Estedad";
+  font-weight: 600;
+  font-size: 22px;
+  min-width: 0;
+}
+.down {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -249,7 +355,6 @@
   height: auto;
   max-width: 100%;
   text-align: right;
-  font-family: "Estedad";
   font-size: 20px;
   text-decoration-line: none;
   padding-bottom: 0px;
@@ -308,8 +413,9 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 0px;
   min-width: 0;
-  padding: 8px;
+  padding: 0px 8px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details {
@@ -474,7 +580,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 0px 8px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details2 {
@@ -567,6 +673,11 @@
   font-weight: 600;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .title3 {
+    font-size: 17px;
+  }
+}
 .left3 {
   display: flex;
   flex-direction: column;
@@ -612,7 +723,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 0px 8px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details3 {

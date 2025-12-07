@@ -95,6 +95,13 @@ export type PlasmicHomepage__OverridesType = {
   img?: Flex__<typeof PlasmicImg__>;
   dontHave?: Flex__<"h3">;
   des?: Flex__<"div">;
+  footer?: Flex__<"div">;
+  up?: Flex__<"div">;
+  right4?: Flex__<"div">;
+  bale2?: Flex__<"div">;
+  left4?: Flex__<"div">;
+  bale?: Flex__<"div">;
+  down?: Flex__<"div">;
   button?: Flex__<typeof Button>;
   دکمهرزروسایت?: Flex__<"div">;
   top?: Flex__<"div">;
@@ -381,7 +388,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   style={{ fontWeight: 700 }}
                 >
                   {
-                    "\u062a\u0646\u0638\u06cc\u0645\u0627\u062a \u0646\u0648\u062a\u06cc\u0641\u06cc\u06a9\u06cc\u0634\u0646"
+                    "\u062a\u0646\u0638\u06cc\u0645 \u0627\u0639\u0644\u0627\u0646\u0627\u062a"
                   }
                 </span>
               </React.Fragment>
@@ -428,86 +435,213 @@ function PlasmicHomepage__RenderFunc(props: {
                               )}
                             >
                               {
-                                "\u0627\u06cc\u0646 \u0631\u0628\u0627\u062a \u0647\u0645\u0647 \u0631\u0632\u0631\u0648\u0647\u0627\u06cc \u0633\u0627\u06cc\u062a\u200c\u0647\u0627\u06cc\u06cc \u0645\u062b\u0644 \u062c\u0627\u0628\u0627\u0645\u0627\u060c \u0627\u062a\u0627\u0642\u06a9 \u0648\u2026 \u0631\u0648 \u0647\u0645\u0648\u0646 \u0644\u062d\u0638\u0647 \u0628\u0627 \u062c\u0632\u0626\u06cc\u0627\u062a \u0628\u0631\u0627\u062a\u0648\u0646 \u0645\u06cc\u200c\u0641\u0631\u0633\u062a\u0647.\n\u062d\u062a\u06cc \u0631\u0632\u0631\u0648\u0647\u0627\u06cc \u062f\u0633\u062a\u06cc \u0647\u0645 \u0627\u0637\u0644\u0627\u0639\u200c\u0631\u0633\u0627\u0646\u06cc \u0645\u06cc\u200c\u0634\u0647 \u0648 \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646 \u0647\u0645 \u06cc\u0627\u062f\u0622\u0648\u0631\u06cc \u0645\u06cc\u200c\u06a9\u0646\u0647 \u06a9\u0647 \u0628\u0631\u0627\u06cc \u0647\u0631 \u0645\u0647\u0645\u0627\u0646 \u0622\u0645\u0627\u062f\u0647 \u0628\u0627\u0634\u06cc\u0646.\n\n\u062a\u0648 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647 \u0645\u06cc\u200c\u062a\u0648\u0646\u06cc\u0646 \u0645\u0634\u062e\u0635 \u06a9\u0646\u06cc\u0646 \u0686\u0647 \u0646\u0648\u062a\u06cc\u0641\u200c\u0647\u0627\u06cc\u06cc \u0645\u06cc\u200c\u062e\u0648\u0627\u06cc\u0646 \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646\u06cc\u0646.\n\u0628\u0631\u0627\u06cc \u062b\u0628\u062a\u200c\u0646\u0627\u0645\u060c \u06a9\u0627\u0641\u06cc\u0647 \u0648\u0627\u0631\u062f \u0686\u062a \u0631\u0628\u0627\u062a \u0628\u0634\u06cc\u0646 \u0648 \u0634\u0645\u0627\u0631\u0647\u200c\u062a\u0648\u0646 \u0631\u0648 \u0648\u0627\u0631\u062f \u06a9\u0646\u06cc\u062f.\n\n\u0622\u06cc\u062f\u06cc \u0631\u0628\u0627\u062a\u200c\u0647\u0627:\n\u062a\u0644\u06af\u0631\u0627\u0645: @rentamon_notification_bot\n\u0628\u0644\u0647: @rentamonbot"
+                                "\u0627\u0628\u062a\u062f\u0627 \u0628\u0627\u06cc\u062f \u0631\u0628\u0627\u062a \u0645\u06cc\u0627\u0646 \u0631\u0627 \u062b\u0628\u062a\u200c\u0646\u0627\u0645 \u06a9\u0646\u06cc\u062f.\n\n\u0627\u06cc\u0646 \u0631\u0628\u0627\u062a \u0647\u0645\u0647 \u0631\u0632\u0631\u0648\u0647\u0627\u06cc \u0633\u0627\u06cc\u062a\u200c\u0647\u0627\u06cc\u06cc \u0645\u062b\u0644 \u062c\u0627\u0628\u0627\u0645\u0627 \u0648 \u0627\u062a\u0627\u0642\u06a9 \u0648 ... \u0631\u0627 \u0647\u0645\u0627\u0646 \u0644\u062d\u0638\u0647 \u0628\u0627 \u062c\u0632\u0626\u06cc\u0627\u062a \u0628\u0631\u0627\u062a\u0648\u0646 \u0645\u06cc\u200c\u0641\u0631\u0633\u062a\u0647\u060c \u062d\u062a\u06cc \u0631\u0632\u0631\u0648\u0647\u0627\u06cc \u062f\u0633\u062a\u06cc \u0648 \u0631\u0648\u0632 \u0648\u0631\u0648\u062f \u0645\u0647\u0645\u0627\u0646 \u0631\u0648 \u0647\u0645 \u06cc\u0627\u062f\u0622\u0648\u0631\u06cc \u0645\u06cc\u200c\u06a9\u0646\u0647.\n\n\u062f\u0631 \u0627\u06cc\u0646 \u0635\u0641\u062d\u0647 \u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u06cc\u062f \u0645\u0634\u062e\u0635 \u06a9\u0646\u06cc\u062f \u0686\u0647 \u0627\u0639\u0644\u0627\u0646\u0627\u062a\u06cc \u0645\u06cc\u200c\u062e\u0648\u0627\u0647\u06cc\u062f \u062f\u0631\u06cc\u0627\u0641\u062a \u06a9\u0646\u06cc\u062f."
                               }
                             </div>
                           </div>
                         ),
                         footer: (
                           <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.freeBox__jVv3S
-                            )}
+                            data-plasmic-name={"footer"}
+                            data-plasmic-override={overrides.footer}
+                            className={classNames(projectcss.all, sty.footer)}
                           >
-                            <Button
-                              data-plasmic-name={"button"}
-                              data-plasmic-override={overrides.button}
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button
-                              )}
-                              label={
+                            <div
+                              data-plasmic-name={"up"}
+                              data-plasmic-override={overrides.up}
+                              className={classNames(projectcss.all, sty.up)}
+                            >
+                              <div
+                                data-plasmic-name={"right4"}
+                                data-plasmic-override={overrides.right4}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.right4
+                                )}
+                              >
                                 <div
+                                  data-plasmic-name={"bale2"}
+                                  data-plasmic-override={overrides.bale2}
                                   className={classNames(
                                     projectcss.all,
-                                    projectcss.__wab_text,
-                                    sty.text__vrXc7
+                                    sty.bale2
                                   )}
+                                  onClick={async event => {
+                                    const $steps = {};
+
+                                    $steps["runCode"] = true
+                                      ? (() => {
+                                          const actionArgs = {
+                                            customFunction: async () => {
+                                              return (() => {
+                                                return (window.location.href =
+                                                  "https://t.me/rentamon_notification_bot");
+                                              })();
+                                            }
+                                          };
+                                          return (({ customFunction }) => {
+                                            return customFunction();
+                                          })?.apply(null, [actionArgs]);
+                                        })()
+                                      : undefined;
+                                    if (
+                                      $steps["runCode"] != null &&
+                                      typeof $steps["runCode"] === "object" &&
+                                      typeof $steps["runCode"].then ===
+                                        "function"
+                                    ) {
+                                      $steps["runCode"] =
+                                        await $steps["runCode"];
+                                    }
+                                  }}
                                 >
-                                  {"\u0628\u0627\u0632\u06af\u0634\u062a"}
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__lRipp
+                                    )}
+                                  >
+                                    {"\u062a\u0644\u06af\u0631\u0627\u0645"}
+                                  </div>
                                 </div>
-                              }
-                              onClick={async event => {
-                                const $steps = {};
+                              </div>
+                              <div
+                                data-plasmic-name={"left4"}
+                                data-plasmic-override={overrides.left4}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.left4
+                                )}
+                              >
+                                <div
+                                  data-plasmic-name={"bale"}
+                                  data-plasmic-override={overrides.bale}
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.bale
+                                  )}
+                                  onClick={async event => {
+                                    const $steps = {};
 
-                                $steps["updateAriaDialogTriggerIsOpen"] = true
-                                  ? (() => {
-                                      const actionArgs = {
-                                        variable: {
-                                          objRoot: $state,
-                                          variablePath: [
-                                            "ariaDialogTrigger",
-                                            "isOpen"
-                                          ]
-                                        },
-                                        operation: 0,
-                                        value: false
-                                      };
-                                      return (({
-                                        variable,
-                                        value,
-                                        startIndex,
-                                        deleteCount
-                                      }) => {
-                                        if (!variable) {
-                                          return;
-                                        }
-                                        const { objRoot, variablePath } =
-                                          variable;
-
-                                        $stateSet(objRoot, variablePath, value);
-                                        return value;
-                                      })?.apply(null, [actionArgs]);
-                                    })()
-                                  : undefined;
-                                if (
-                                  $steps["updateAriaDialogTriggerIsOpen"] !=
-                                    null &&
-                                  typeof $steps[
-                                    "updateAriaDialogTriggerIsOpen"
-                                  ] === "object" &&
-                                  typeof $steps["updateAriaDialogTriggerIsOpen"]
-                                    .then === "function"
-                                ) {
-                                  $steps["updateAriaDialogTriggerIsOpen"] =
-                                    await $steps[
-                                      "updateAriaDialogTriggerIsOpen"
-                                    ];
+                                    $steps["runCode"] = true
+                                      ? (() => {
+                                          const actionArgs = {
+                                            customFunction: async () => {
+                                              return (() => {
+                                                return (window.location.href =
+                                                  "https://web.bale.ai/chat?uid=526080336");
+                                              })();
+                                            }
+                                          };
+                                          return (({ customFunction }) => {
+                                            return customFunction();
+                                          })?.apply(null, [actionArgs]);
+                                        })()
+                                      : undefined;
+                                    if (
+                                      $steps["runCode"] != null &&
+                                      typeof $steps["runCode"] === "object" &&
+                                      typeof $steps["runCode"].then ===
+                                        "function"
+                                    ) {
+                                      $steps["runCode"] =
+                                        await $steps["runCode"];
+                                    }
+                                  }}
+                                >
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__nGqMz
+                                    )}
+                                  >
+                                    {"\u0628\u0644\u0647"}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              data-plasmic-name={"down"}
+                              data-plasmic-override={overrides.down}
+                              className={classNames(projectcss.all, sty.down)}
+                            >
+                              <Button
+                                data-plasmic-name={"button"}
+                                data-plasmic-override={overrides.button}
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.button
+                                )}
+                                label={
+                                  <div
+                                    className={classNames(
+                                      projectcss.all,
+                                      projectcss.__wab_text,
+                                      sty.text__vrXc7
+                                    )}
+                                  >
+                                    {"\u0628\u0627\u0632\u06af\u0634\u062a"}
+                                  </div>
                                 }
-                              }}
-                              type={"soft"}
-                            />
+                                onClick={async event => {
+                                  const $steps = {};
+
+                                  $steps["updateAriaDialogTriggerIsOpen"] = true
+                                    ? (() => {
+                                        const actionArgs = {
+                                          variable: {
+                                            objRoot: $state,
+                                            variablePath: [
+                                              "ariaDialogTrigger",
+                                              "isOpen"
+                                            ]
+                                          },
+                                          operation: 0,
+                                          value: false
+                                        };
+                                        return (({
+                                          variable,
+                                          value,
+                                          startIndex,
+                                          deleteCount
+                                        }) => {
+                                          if (!variable) {
+                                            return;
+                                          }
+                                          const { objRoot, variablePath } =
+                                            variable;
+
+                                          $stateSet(
+                                            objRoot,
+                                            variablePath,
+                                            value
+                                          );
+                                          return value;
+                                        })?.apply(null, [actionArgs]);
+                                      })()
+                                    : undefined;
+                                  if (
+                                    $steps["updateAriaDialogTriggerIsOpen"] !=
+                                      null &&
+                                    typeof $steps[
+                                      "updateAriaDialogTriggerIsOpen"
+                                    ] === "object" &&
+                                    typeof $steps[
+                                      "updateAriaDialogTriggerIsOpen"
+                                    ].then === "function"
+                                  ) {
+                                    $steps["updateAriaDialogTriggerIsOpen"] =
+                                      await $steps[
+                                        "updateAriaDialogTriggerIsOpen"
+                                      ];
+                                  }
+                                }}
+                                openLinkInNewTab={false}
+                                type={"soft"}
+                              />
+                            </div>
                           </div>
                         ),
                         heading: (
@@ -651,7 +785,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           data-plasmic-name={"left"}
                           data-plasmic-override={overrides.left}
-                          className={classNames(projectcss.all, sty.left)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.left,
+                            "ltr2"
+                          )}
                         >
                           {(() => {
                             const child$Props = {
@@ -703,23 +841,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                                 throw e;
                                               }
                                             })(),
-                                            (() => {
-                                              try {
-                                                return $state["دکمهیرزروسایت"]
-                                                  .isSelected
-                                                  ? "از این به بعد هرچه رزرو سایت داشته باشی بهت خبر می‌دیم"
-                                                  : "از این به بعد دیگه رزرو سایت‌ها بهت خبر داده نمیشه";
-                                              } catch (e) {
-                                                if (
-                                                  e instanceof TypeError ||
-                                                  e?.plasmicType ===
-                                                    "PlasmicUndefinedDataError"
-                                                ) {
-                                                  return "\u0634\u0645\u0627 \u062e\u0627\u0645\u0648\u0634 \u06a9\u0631\u062f\u06cc\u0646";
-                                                }
-                                                throw e;
-                                              }
-                                            })(),
+                                            ``,
                                             undefined,
                                             "top"
                                           ]
@@ -973,7 +1095,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           data-plasmic-name={"left2"}
                           data-plasmic-override={overrides.left2}
-                          className={classNames(projectcss.all, sty.left2)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.left2,
+                            "ltr2"
+                          )}
                         >
                           {(() => {
                             const child$Props = {
@@ -1025,23 +1151,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                                 throw e;
                                               }
                                             })(),
-                                            (() => {
-                                              try {
-                                                return $state["دکمهیرزروسایت2"]
-                                                  .isSelected
-                                                  ? "از این به بعد هرچه رزرو سایت داشته باشی بهت خبر می‌دیم"
-                                                  : "از این به بعد دیگه رزرو سایت‌ها بهت خبر داده نمیشه";
-                                              } catch (e) {
-                                                if (
-                                                  e instanceof TypeError ||
-                                                  e?.plasmicType ===
-                                                    "PlasmicUndefinedDataError"
-                                                ) {
-                                                  return "\u0634\u0645\u0627 \u062e\u0627\u0645\u0648\u0634 \u06a9\u0631\u062f\u06cc\u0646";
-                                                }
-                                                throw e;
-                                              }
-                                            })(),
+                                            ``,
                                             undefined,
                                             "top"
                                           ]
@@ -1288,7 +1398,11 @@ function PlasmicHomepage__RenderFunc(props: {
                         <div
                           data-plasmic-name={"left3"}
                           data-plasmic-override={overrides.left3}
-                          className={classNames(projectcss.all, sty.left3)}
+                          className={classNames(
+                            projectcss.all,
+                            sty.left3,
+                            "ltr2"
+                          )}
                         >
                           {(() => {
                             const child$Props = {
@@ -1340,23 +1454,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                                 throw e;
                                               }
                                             })(),
-                                            (() => {
-                                              try {
-                                                return $state["دکمهیرزروسایت3"]
-                                                  .isSelected
-                                                  ? "از این به بعد هرچه رزرو سایت داشته باشی بهت خبر می‌دیم"
-                                                  : "از این به بعد دیگه رزرو سایت‌ها بهت خبر داده نمیشه";
-                                              } catch (e) {
-                                                if (
-                                                  e instanceof TypeError ||
-                                                  e?.plasmicType ===
-                                                    "PlasmicUndefinedDataError"
-                                                ) {
-                                                  return "\u0634\u0645\u0627 \u062e\u0627\u0645\u0648\u0634 \u06a9\u0631\u062f\u06cc\u0646";
-                                                }
-                                                throw e;
-                                              }
-                                            })(),
+                                            ``,
                                             undefined,
                                             "top"
                                           ]
@@ -1559,6 +1657,13 @@ const PlasmicDescendants = {
     "img",
     "dontHave",
     "des",
+    "footer",
+    "up",
+    "right4",
+    "bale2",
+    "left4",
+    "bale",
+    "down",
     "button",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "top",
@@ -1597,6 +1702,13 @@ const PlasmicDescendants = {
     "img",
     "dontHave",
     "des",
+    "footer",
+    "up",
+    "right4",
+    "bale2",
+    "left4",
+    "bale",
+    "down",
     "button",
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
     "top",
@@ -1634,6 +1746,13 @@ const PlasmicDescendants = {
     "img",
     "dontHave",
     "des",
+    "footer",
+    "up",
+    "right4",
+    "bale2",
+    "left4",
+    "bale",
+    "down",
     "button"
   ],
   header: ["header", "igAndT", "img", "dontHave"],
@@ -1641,6 +1760,22 @@ const PlasmicDescendants = {
   img: ["img"],
   dontHave: ["dontHave"],
   des: ["des"],
+  footer: [
+    "footer",
+    "up",
+    "right4",
+    "bale2",
+    "left4",
+    "bale",
+    "down",
+    "button"
+  ],
+  up: ["up", "right4", "bale2", "left4", "bale"],
+  right4: ["right4", "bale2"],
+  bale2: ["bale2"],
+  left4: ["left4", "bale"],
+  bale: ["bale"],
+  down: ["down", "button"],
   button: ["button"],
   دکمهرزروسایت: [
     "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a",
@@ -1760,6 +1895,13 @@ type NodeDefaultElementType = {
   img: typeof PlasmicImg__;
   dontHave: "h3";
   des: "div";
+  footer: "div";
+  up: "div";
+  right4: "div";
+  bale2: "div";
+  left4: "div";
+  bale: "div";
+  down: "div";
   button: typeof Button;
   دکمهرزروسایت: "div";
   top: "div";
@@ -1860,6 +2002,13 @@ export const PlasmicHomepage = Object.assign(
     img: makeNodeComponent("img"),
     dontHave: makeNodeComponent("dontHave"),
     des: makeNodeComponent("des"),
+    footer: makeNodeComponent("footer"),
+    up: makeNodeComponent("up"),
+    right4: makeNodeComponent("right4"),
+    bale2: makeNodeComponent("bale2"),
+    left4: makeNodeComponent("left4"),
+    bale: makeNodeComponent("bale"),
+    down: makeNodeComponent("down"),
     button: makeNodeComponent("button"),
     دکمهرزروسایت: makeNodeComponent(
       "\u062f\u06a9\u0645\u0647\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a"
