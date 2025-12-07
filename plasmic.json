@@ -828,6 +828,20 @@
           "cssFilePath": "plasmic/notification_setting/PlasmicModal.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "YehJWz95nk8f",
+          "name": "SettingNotification",
+          "type": "managed",
+          "projectId": "jyct5VPKPFiM97kWoWCufE",
+          "renderModuleFilePath": "plasmic/notification_setting/PlasmicSettingNotification.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page.tsx"
+          },
+          "cssFilePath": "plasmic/notification_setting/PlasmicSettingNotification.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/new-page"
         }
       ],
       "icons": [

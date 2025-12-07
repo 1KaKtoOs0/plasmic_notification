@@ -1,11 +1,15 @@
 .root {
   display: grid;
+  flex-direction: column;
   position: relative;
   width: 100%;
   height: 100%;
   align-content: flex-start;
   justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
   background: #ebfaff;
+  padding-top: 68px;
   min-width: 0;
   min-height: 0;
   grid-template-columns:
@@ -15,17 +19,12 @@
       calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
     )
     minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
-  padding: 68px 0px 0px;
 }
 .root > * {
   grid-column: 4;
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .root > * {
-    grid-column: 4;
-  }
-}
-.freeBox___6FFgk {
+.freeBox__tCn32 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -44,11 +43,12 @@
   padding: 0px 0px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___6FFgk {
-    display: none;
+  .freeBox__tCn32 {
+    animation: none;
   }
 }
-.text___7Kvf {
+.text__cs6Ie {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -64,16 +64,37 @@
   font-style: normal;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__cs6Ie {
+    animation: none;
+  }
+}
 .httpRestApiFetcher:global(.__wab_instance) {
+  animation: none;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .httpRestApiFetcher:global(.__wab_instance) {
+    animation: none;
+  }
+}
+.text__d0XPf {
+  animation: none;
+}
 .dontHave2:global(.__wab_instance):global(.__wab_instance) {
+  animation: none;
   max-width: 100%;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .dontHave2:global(.__wab_instance):global(.__wab_instance) {
+    animation: none;
+  }
+}
 .header {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -88,12 +109,14 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .header {
+    animation: none;
     padding-bottom: 0px;
     border-radius: 0px;
     border-bottom: 1px dashed #0000002e;
   }
 }
 .igAndT {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -109,7 +132,13 @@
   padding: 20px 8px 8px;
   border-width: 1px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .igAndT {
+    animation: none;
+  }
+}
 .img {
+  animation: none;
   object-fit: cover;
   max-width: 100%;
   align-self: center;
@@ -121,7 +150,13 @@
 .img > picture > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img {
+    animation: none;
+  }
+}
 .dontHave {
+  animation: none;
   width: 100%;
   height: 67px;
   max-width: 100%;
@@ -136,10 +171,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .dontHave {
+    animation: none;
     font-size: 17.7px;
   }
 }
-.freeBox___97RR {
+.freeBox__f05H5 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -152,12 +189,14 @@
   padding: 25px 8px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___97RR {
+  .freeBox__f05H5 {
+    animation: none;
     padding-top: 18px;
     padding-bottom: 18px;
   }
 }
 .des {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -169,11 +208,13 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .des {
+    animation: none;
     font-size: 13px;
     text-align: right;
   }
 }
 .footer {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -186,6 +227,7 @@
   padding: 8px;
 }
 .up {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -198,6 +240,7 @@
   padding: 8px;
 }
 .right4 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -210,6 +253,7 @@
   padding: 8px;
 }
 .bale2 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -224,7 +268,8 @@
   border-radius: 100px;
   padding: 8px;
 }
-.text__lRipp {
+.text__lhbZj {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -239,6 +284,7 @@
   min-width: 0;
 }
 .left4 {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -251,6 +297,7 @@
   padding: 8px;
 }
 .bale {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -265,7 +312,8 @@
   border-radius: 100px;
   padding: 8px;
 }
-.text__nGqMz {
+.text__iBg3P {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -280,6 +328,7 @@
   min-width: 0;
 }
 .down {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -290,27 +339,35 @@
   border-radius: 100px;
   padding: var(--token-O7vZe6GZV62m);
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .down {
+    animation: none;
+  }
+}
 .button:global(.__wab_instance):global(.__wab_instance) {
+  animation: none;
   align-self: auto;
   max-width: 273px;
   width: 100%;
   height: 44px;
   min-width: 0;
 }
-.svg__wTfyE {
+.svg__yo5FR {
   position: relative;
   height: 1em;
 }
-.text__vrXc7 {
+.text___10Sm8 {
+  animation: none;
   padding-left: 0px;
   text-align: center;
   font-family: "Vazirmatn", sans-serif;
 }
-.svg___0XvZw {
+.svg__qdYuR {
   position: relative;
   height: 1em;
 }
 .دکمهرزروسایت {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -325,6 +382,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهرزروسایت {
+    animation: none;
     padding-right: 16px;
     padding-left: 16px;
     box-shadow: none;
@@ -332,6 +390,7 @@
   }
 }
 .top {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -343,7 +402,13 @@
   min-width: 0;
   padding: 8px 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .top {
+    animation: none;
+  }
+}
 .right {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -357,6 +422,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .right {
+    animation: none;
     max-width: 60%;
     align-items: flex-end;
     justify-content: flex-start;
@@ -366,6 +432,7 @@
   }
 }
 .title {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -381,10 +448,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .title {
+    animation: none;
     align-self: flex-end;
   }
 }
 .left {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -398,6 +467,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .left {
+    animation: none;
     align-items: center;
     justify-content: flex-end;
     display: flex;
@@ -407,6 +477,7 @@
   }
 }
 .دکمهیرزروسایت:global(.__wab_instance):global(.__wab_instance) {
+  animation: none;
   max-width: 100%;
   width: 50px;
   flex-grow: 1;
@@ -417,10 +488,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهیرزروسایت:global(.__wab_instance):global(.__wab_instance) {
+    animation: none;
     width: auto;
   }
 }
 .details {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -435,6 +508,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details {
+    animation: none;
     padding-top: 0px;
     padding-bottom: 0px;
     display: flex;
@@ -447,6 +521,7 @@
   }
 }
 .تسویه {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -458,8 +533,14 @@
   color: #3e3e3e;
   font-weight: 500;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .تسویه {
+    animation: none;
+  }
 }
 .تسویه2 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -471,8 +552,14 @@
   color: #3e3e3e;
   font-weight: 500;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .تسویه2 {
+    animation: none;
+  }
 }
 .تسویه4 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -485,7 +572,13 @@
   font-weight: 500;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .تسویه4 {
+    animation: none;
+  }
+}
 .دکمهرزرودستی {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -500,6 +593,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهرزرودستی {
+    animation: none;
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -514,6 +608,7 @@
   }
 }
 .top2 {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -525,7 +620,13 @@
   min-width: 0;
   padding: 8px 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .top2 {
+    animation: none;
+  }
+}
 .right2 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -537,7 +638,13 @@
   min-width: 0;
   padding: 8px 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .right2 {
+    animation: none;
+  }
+}
 .title2 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -551,7 +658,13 @@
   font-weight: 600;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .title2 {
+    animation: none;
+  }
+}
 .left2 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -565,6 +678,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .left2 {
+    animation: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -573,6 +687,7 @@
   }
 }
 .دکمهیرزروسایت2:global(.__wab_instance):global(.__wab_instance) {
+  animation: none;
   max-width: 100%;
   width: 50px;
   flex-grow: 1;
@@ -583,10 +698,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهیرزروسایت2:global(.__wab_instance):global(.__wab_instance) {
+    animation: none;
     width: auto;
   }
 }
 .details2 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -600,11 +717,13 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details2 {
+    animation: none;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
 .رزروجدید2 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -617,8 +736,14 @@
   color: #3e3e3e;
   font-weight: 500;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .رزروجدید2 {
+    animation: none;
+  }
 }
 .رزروجدید4 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -632,7 +757,13 @@
   font-weight: 500;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .رزروجدید4 {
+    animation: none;
+  }
+}
 .دکمهروزورودمهمان {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -646,12 +777,14 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهروزورودمهمان {
+    animation: none;
     padding-right: 16px;
     padding-left: 16px;
     box-shadow: none;
   }
 }
 .top3 {
+  animation: none;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -663,7 +796,13 @@
   min-width: 0;
   padding: 8px 0px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .top3 {
+    animation: none;
+  }
+}
 .right3 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -676,6 +815,7 @@
   padding: 8px 0px;
 }
 .title3 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -691,10 +831,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .title3 {
+    animation: none;
     font-size: 17px;
   }
 }
 .left3 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -708,6 +850,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .left3 {
+    animation: none;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -716,6 +859,7 @@
   }
 }
 .دکمهیرزروسایت3:global(.__wab_instance):global(.__wab_instance) {
+  animation: none;
   max-width: 100%;
   width: 50px;
   flex-grow: 1;
@@ -726,10 +870,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .دکمهیرزروسایت3:global(.__wab_instance):global(.__wab_instance) {
+    animation: none;
     width: auto;
   }
 }
 .details3 {
+  animation: none;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -743,11 +889,13 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .details3 {
+    animation: none;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
 .رزروجدید3 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
@@ -762,6 +910,7 @@
   min-width: 0;
 }
 .رزروجدید5 {
+  animation: none;
   position: relative;
   width: 100%;
   height: auto;
