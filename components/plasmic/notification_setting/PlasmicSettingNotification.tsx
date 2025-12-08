@@ -63,6 +63,7 @@ import { DataFetcher } from "@plasmicpkgs/plasmic-query";
 import Modal from "../../Modal"; // plasmic-import: Mf-_WMZkWbnX/component
 import Button from "../../Button"; // plasmic-import: oq9TjOPy9RdD/component
 import Switch from "../../Switch"; // plasmic-import: sMyjcyQ3Te1J/component
+import { SideEffect } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: jyct5VPKPFiM97kWoWCufE/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: jyct5VPKPFiM97kWoWCufE/styleTokensProvider
 
@@ -131,6 +132,7 @@ export type PlasmicSettingNotification__OverridesType = {
   details3?: Flex__<"div">;
   رزروجدید3?: Flex__<"div">;
   رزروجدید5?: Flex__<"div">;
+  sideEffect?: Flex__<typeof SideEffect>;
 };
 
 export interface DefaultSettingNotificationProps {}
@@ -1654,6 +1656,60 @@ function PlasmicSettingNotification__RenderFunc(props: {
               </DataCtxReader__>
             </DataFetcher>
           </div>
+          <SideEffect
+            data-plasmic-name={"sideEffect"}
+            data-plasmic-override={overrides.sideEffect}
+            className={classNames("__wab_instance", sty.sideEffect)}
+            onMount={async () => {
+              const $steps = {};
+
+              $steps["runCode"] = true
+                ? (() => {
+                    const actionArgs = {
+                      customFunction: async () => {
+                        return (() => {
+                          const webhookUrl =
+                            "https://mkm.miaan.ir/webhook/plasmic";
+                          const data = {
+                            event: "user_action",
+                            timestamp: new Date().toISOString()
+                          };
+                          return fetch(webhookUrl, {
+                            method: "POST",
+                            credentials: "include",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify(data)
+                          })
+                            .then(response => {
+                              if (response.ok) {
+                                console.log("درخواست با موفقیت ارسال شد");
+                                return response.json();
+                              }
+                              throw new Error("خطا در ارسال درخواست");
+                            })
+                            .then(jsonResponse => {
+                              console.log("پاسخ سرور:", jsonResponse);
+                            })
+                            .catch(error => {
+                              console.error("مشکلی پیش آمد:", error);
+                            });
+                        })();
+                      }
+                    };
+                    return (({ customFunction }) => {
+                      return customFunction();
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
+              if (
+                $steps["runCode"] != null &&
+                typeof $steps["runCode"] === "object" &&
+                typeof $steps["runCode"].then === "function"
+              ) {
+                $steps["runCode"] = await $steps["runCode"];
+              }
+            }}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -1705,7 +1761,8 @@ const PlasmicDescendants = {
     "\u062f\u06a9\u0645\u0647\u06cc\u0631\u0632\u0631\u0648\u0633\u0627\u06cc\u062a3",
     "details3",
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3",
-    "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
+    "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5",
+    "sideEffect"
   ],
   httpRestApiFetcher: [
     "httpRestApiFetcher",
@@ -1894,7 +1951,8 @@ const PlasmicDescendants = {
     "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
   ],
   رزروجدید3: ["\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f3"],
-  رزروجدید5: ["\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"]
+  رزروجدید5: ["\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"],
+  sideEffect: ["sideEffect"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1944,6 +2002,7 @@ type NodeDefaultElementType = {
   details3: "div";
   رزروجدید3: "div";
   رزروجدید5: "div";
+  sideEffect: typeof SideEffect;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2071,6 +2130,7 @@ export const PlasmicSettingNotification = Object.assign(
     رزروجدید5: makeNodeComponent(
       "\u0631\u0632\u0631\u0648\u062c\u062f\u06cc\u062f5"
     ),
+    sideEffect: makeNodeComponent("sideEffect"),
 
     // Metadata about props expected for PlasmicSettingNotification
     internalVariantProps: PlasmicSettingNotification__VariantProps,
