@@ -404,11 +404,30 @@ function PlasmicHomepage__RenderFunc(props: {
                 </DataCtxReader__>
               }
               errorName={"fetchError"}
+              headers={(() => {
+                try {
+                  return {
+                    headers: {
+                      "Content-Type": "application/json",
+                      Accept: "application/json"
+                    },
+                    withCredentials: true
+                  };
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return undefined;
+                  }
+                  throw e;
+                }
+              })()}
               loadingDisplay={null}
               method={"GET"}
               noLayout={false}
               previewSpinner={false}
-              url={"https://second-n8n.darkube.app/webhook/plasmic"}
+              url={"https://mkm.miaan.ir/webhook/plasmic"}
             >
               <DataCtxReader__>
                 {$ctx => (

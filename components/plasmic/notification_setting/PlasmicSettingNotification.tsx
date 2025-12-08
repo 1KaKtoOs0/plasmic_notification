@@ -421,7 +421,7 @@ function PlasmicSettingNotification__RenderFunc(props: {
               method={"GET"}
               noLayout={false}
               previewSpinner={false}
-              url={"https://mkm.miaan.ir//webhook/plasmic"}
+              url={"https://mkm.miaan.ir/webhook/plasmic"}
             >
               <DataCtxReader__>
                 {$ctx => (
