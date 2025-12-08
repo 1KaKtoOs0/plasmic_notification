@@ -405,7 +405,7 @@ function PlasmicSettingNotification__RenderFunc(props: {
                       "Content-Type": "application/json",
                       Accept: "application/json"
                     },
-                    withCredentials: true
+                    credentials: "include"
                   };
                 } catch (e) {
                   if (
