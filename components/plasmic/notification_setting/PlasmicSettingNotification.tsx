@@ -400,9 +400,13 @@ function PlasmicSettingNotification__RenderFunc(props: {
               errorName={"fetchError"}
               headers={(() => {
                 try {
-                  return {
-                    Authorization: "Bearer " + $state.token
-                  };
+                  return fetch(
+                    "https://second-n8n.darkube.app/webhook/plasmic",
+                    {
+                      method: "GET", // یا POST
+                      credentials: "include" // مهم: این باعث میشه کوکی هم فرستاده بشه
+                    }
+                  );
                 } catch (e) {
                   if (
                     e instanceof TypeError ||
@@ -539,7 +543,7 @@ function PlasmicSettingNotification__RenderFunc(props: {
                                             customFunction: async () => {
                                               return (() => {
                                                 return (window.location.href =
-                                                  "https://web.bale.ai/chat?uid=526080336");
+                                                  "https://ble.ir/rentamonbot");
                                               })();
                                             }
                                           };
