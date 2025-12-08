@@ -98,7 +98,7 @@ export type PlasmicSettingNotification__OverridesType = {
   footer?: Flex__<"div">;
   up?: Flex__<"div">;
   right4?: Flex__<"div">;
-  bale2?: Flex__<"div">;
+  telegram?: Flex__<"div">;
   left4?: Flex__<"div">;
   bale?: Flex__<"div">;
   down?: Flex__<"div">;
@@ -398,6 +398,21 @@ function PlasmicSettingNotification__RenderFunc(props: {
                 </DataCtxReader__>
               }
               errorName={"fetchError"}
+              headers={(() => {
+                try {
+                  return {
+                    Authorization: "Bearer " + $state.token
+                  };
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return undefined;
+                  }
+                  throw e;
+                }
+              })()}
               loadingDisplay={null}
               method={"GET"}
               noLayout={false}
@@ -454,11 +469,11 @@ function PlasmicSettingNotification__RenderFunc(props: {
                                 )}
                               >
                                 <div
-                                  data-plasmic-name={"bale2"}
-                                  data-plasmic-override={overrides.bale2}
+                                  data-plasmic-name={"telegram"}
+                                  data-plasmic-override={overrides.telegram}
                                   className={classNames(
                                     projectcss.all,
-                                    sty.bale2
+                                    sty.telegram
                                   )}
                                   onClick={async event => {
                                     const $steps = {};
@@ -1132,8 +1147,8 @@ function PlasmicSettingNotification__RenderFunc(props: {
                                               try {
                                                 return $state["دکمهیرزروسایت2"]
                                                   .isSelected
-                                                  ? "اعلانات رزرو سایت روشن شد"
-                                                  : "اعلانات رزرو سایت خاموش شد";
+                                                  ? "اعلانات رزرو دستی روشن شد"
+                                                  : "اعلانات رزرو دستی خاموش شد";
                                               } catch (e) {
                                                 if (
                                                   e instanceof TypeError ||
@@ -1435,8 +1450,8 @@ function PlasmicSettingNotification__RenderFunc(props: {
                                               try {
                                                 return $state["دکمهیرزروسایت3"]
                                                   .isSelected
-                                                  ? "اعلانات رزرو سایت روشن شد"
-                                                  : "اعلانات رزرو سایت خاموش شد";
+                                                  ? "اعلانات روز ورود مهمان روشن شد"
+                                                  : "اعلانات روز ورود مهمان خاموش شد";
                                               } catch (e) {
                                                 if (
                                                   e instanceof TypeError ||
@@ -1654,7 +1669,7 @@ const PlasmicDescendants = {
     "footer",
     "up",
     "right4",
-    "bale2",
+    "telegram",
     "left4",
     "bale",
     "down",
@@ -1699,7 +1714,7 @@ const PlasmicDescendants = {
     "footer",
     "up",
     "right4",
-    "bale2",
+    "telegram",
     "left4",
     "bale",
     "down",
@@ -1743,7 +1758,7 @@ const PlasmicDescendants = {
     "footer",
     "up",
     "right4",
-    "bale2",
+    "telegram",
     "left4",
     "bale",
     "down",
@@ -1758,15 +1773,15 @@ const PlasmicDescendants = {
     "footer",
     "up",
     "right4",
-    "bale2",
+    "telegram",
     "left4",
     "bale",
     "down",
     "button"
   ],
-  up: ["up", "right4", "bale2", "left4", "bale"],
-  right4: ["right4", "bale2"],
-  bale2: ["bale2"],
+  up: ["up", "right4", "telegram", "left4", "bale"],
+  right4: ["right4", "telegram"],
+  telegram: ["telegram"],
   left4: ["left4", "bale"],
   bale: ["bale"],
   down: ["down", "button"],
@@ -1892,7 +1907,7 @@ type NodeDefaultElementType = {
   footer: "div";
   up: "div";
   right4: "div";
-  bale2: "div";
+  telegram: "div";
   left4: "div";
   bale: "div";
   down: "div";
@@ -1999,7 +2014,7 @@ export const PlasmicSettingNotification = Object.assign(
     footer: makeNodeComponent("footer"),
     up: makeNodeComponent("up"),
     right4: makeNodeComponent("right4"),
-    bale2: makeNodeComponent("bale2"),
+    telegram: makeNodeComponent("telegram"),
     left4: makeNodeComponent("left4"),
     bale: makeNodeComponent("bale"),
     down: makeNodeComponent("down"),
