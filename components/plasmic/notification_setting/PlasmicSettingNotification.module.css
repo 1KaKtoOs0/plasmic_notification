@@ -67,6 +67,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .text__cs6Ie {
     animation: none;
+    font-size: 24px;
   }
 }
 .httpRestApiFetcher:global(.__wab_instance) {
@@ -172,7 +173,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .dontHave {
     animation: none;
-    font-size: 17.7px;
+    font-size: 17px;
   }
 }
 .freeBox__f05H5 {
