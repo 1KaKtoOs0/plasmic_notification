@@ -400,13 +400,13 @@ function PlasmicSettingNotification__RenderFunc(props: {
               errorName={"fetchError"}
               headers={(() => {
                 try {
-                  return fetch(
-                    "https://second-n8n.darkube.app/webhook/plasmic",
-                    {
-                      method: "GET", // یا POST
-                      credentials: "include" // مهم: این باعث میشه کوکی هم فرستاده بشه
-                    }
-                  );
+                  return {
+                    headers: {
+                      "Content-Type": "application/json",
+                      Accept: "application/json"
+                    },
+                    withCredentials: true
+                  };
                 } catch (e) {
                   if (
                     e instanceof TypeError ||
@@ -421,7 +421,7 @@ function PlasmicSettingNotification__RenderFunc(props: {
               method={"GET"}
               noLayout={false}
               previewSpinner={false}
-              url={"https://second-n8n.darkube.app/webhook/plasmic"}
+              url={"https://mkm.miaan.ir//webhook/plasmic"}
             >
               <DataCtxReader__>
                 {$ctx => (
