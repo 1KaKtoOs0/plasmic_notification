@@ -108,7 +108,7 @@ export const selectMeta: CodeComponentMeta<SelectType> = {
             advanced: true,
           },
         },
-        defaultValue: [
+        default: [
           {
             label: "Option 1",
             value: "option1",
